@@ -26,13 +26,12 @@ def calculate():
     elif what == "%":
         c = a % b
         print("Результат: " + str(c))
-
     else:
-        print("Выбрана не верная операция!")
+        print("Выбрана не верная операция! ")
+    again()
 
 def again():
-    calc_again = input("Хочешь выйти напиши N, если остаться Y: ")
-
+    calc_again = input("Хочешь остаться пиши - Y: ")
     if calc_again.upper() == 'Y':
         calculate()
     elif calc_again.upper() == 'N':
@@ -42,4 +41,3 @@ def again():
 
 welcome()
 calculate()
-again()
